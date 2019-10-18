@@ -1,10 +1,11 @@
 {
   "name": "chat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -L --watch .  server/index.js"
+    "dev": "nodemon -L --watch .  server/index.js",
+    "start": "pm2-runtime start ecosystem.config.js --env=production"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "node-json-db": "^1.0.2",
+    "pm2": "^4.1.2",
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
